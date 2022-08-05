@@ -1,0 +1,9 @@
+.noVideoHome{
+    background: url('../../resources/img/background.png') no-repeat center;
+    background-size: cover;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}

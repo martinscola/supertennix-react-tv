@@ -1,0 +1,48 @@
+.horizontalCarouselContainer{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr 90%;
+    row-gap: 1rem;
+    align-self: center;
+    /*scroll-snap-align: center;*/
+}
+
+.horizontalCarousel {
+    height: max-content;
+    max-width: max-content;
+    overflow-x: scroll;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2rem;
+}
+
+.contentElement {
+    max-width: min-content;
+}
+
+.viewAllElement {
+    background-color: var(--supertennix-bright-red);
+    border: 2px solid transparent;
+    height: 100%;
+    width: 4rem;
+    display: grid;
+    padding: 1rem;
+    /*align-self: start;*/
+    overflow: hidden;
+    align-items: center;
+    text-shadow: 2px 2px 5px var(--supertennix-black);
+}
+
+.viewAllTextContainer{
+    display: grid;
+    justify-items: center;
+    margin-right: 3rem;
+}
+
+.viewAllElement:hover, .viewAllElement:focus{
+    border: 2px solid var(--360sports-white);
+}
+
+.sliderTitle {
+    display: block;
+}

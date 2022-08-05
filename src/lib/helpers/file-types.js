@@ -1,0 +1,5 @@
+export const VIDEO = 'video'
+export const AUDIO = 'audio'
+export const TEXT = 'text'
+export const IMAGE = 'image'
+export const UNDEFINED = 'null'

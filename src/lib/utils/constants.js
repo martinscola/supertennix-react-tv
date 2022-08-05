@@ -1,0 +1,11 @@
+export const authURI =`${process.env.REACT_APP_BASE_AUTH_URL}`
+export const baseAPIURI =`${process.env.REACT_APP_BASE_API_URL}`
+export const registerDeviceEndpoint =`${process.env.REACT_APP_REGISTER_DEVICE_ENDPOINT}`
+export const checkDeviceEndpoint =`${process.env.REACT_APP_CHECK_DEVICE_ENDPOINT}`
+export const loginEndpoint =`${process.env.REACT_APP_LOGIN_ENDPOINT}`
+export const logoutEndpoint =`${process.env.REACT_APP_LOGOUT_ENDPOINT}`
+export const searchEndpoint =`${process.env.REACT_APP_SEARCH_ENDPOINT}`
+export const pagesEndpoint =`${process.env.REACT_APP_PAGES_ENDPOINT}`
+export const apiEndpoint = `${process.env.REACT_APP_API_ENDPOINT}`
+export const videoRefreshTimes =`${process.env.REACT_APP_VIDEO_REFRESH_TIME}`
+export const appVersion = `${process.env.REACT_APP_VERSION}`

@@ -1,0 +1,117 @@
+.searchHome {
+    height: 100%;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 10vh 1fr;
+    row-gap: 3rem;
+}
+
+.searchSection {
+    display: grid;
+    align-items: end;
+    justify-items: center;
+}
+
+.searchForm {
+    display: grid;
+}
+
+.searchButton, .searchInput {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    align-self: center;
+
+}
+
+.searchFocus {
+    justify-self: center;
+    max-width: fit-content;
+    border: 2px solid transparent;
+    border-radius: 3% 3% 3% 3% / 50% 50% 50% 50%;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.searchInput {
+    border: 2px solid transparent;
+    border-radius: 3% 3% 3% 3% / 50% 50% 50% 50%;
+    padding: 1rem 3rem;
+    font-size: 28px;
+    width: 70vw;
+    background-color: var(--supertennix-dark-gray);
+    color: var(--supertennix-light-gray);
+}
+
+.searchButton {
+    justify-self: end;
+    color: var(--supertennix-white);
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 28px;
+    border: none;
+    padding: 1rem;
+    background: none;
+    font-family: Rubik, sans-serif;
+
+}
+
+.searchResults {
+    max-height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-y: scroll;
+}
+
+.contentElement:focus img, .contentElement:hover img {
+    border: 2px solid var(--supertennix-yellow);
+}
+
+[class^="searchResults"]:not(.focus) {
+    border: 2px solid transparent;
+}
+
+
+[class^="searchResults"] {
+    height: 21vh;
+    width: calc(21vh * (16 / 9));
+    overflow: hidden;
+}
+
+
+.contentGrid {
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 22%);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    overflow-y: scroll;
+}
+
+.contentElement img {
+    border: 2px solid transparent;
+    align-self: center;
+    justify-self: center;
+    height: 21vh;
+    width: calc(21vh * (16 / 9));
+}
+
+.inputFocus input {
+    border: 2px solid var(--supertennix-light-gray);
+}
+
+.focus {
+    border: 2px solid var(--supertennix-yellow);
+}

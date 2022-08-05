@@ -1,0 +1,16 @@
+.tabContainer{
+    min-width: 100%;
+    height: fit-content;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    /*border-image: linear-gradient(to right, rgba(249, 181, 0, 0.8) 0%, var(--360sports-orange-dark) 100%) 100;*/
+}
+
+.tabText{
+    border-radius: 0.25rem 0.25rem 0 0;
+    padding: 0 2rem;
+    max-width: fit-content;
+    text-transform: capitalize;
+}
+
+

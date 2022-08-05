@@ -1,0 +1,95 @@
+.profile {
+    display: grid;
+    grid-template-columns: 40% 45%;
+    column-gap: 15%;
+}
+
+.profile h3 {
+    text-transform: uppercase;
+}
+
+.info {
+
+}
+
+.info h3 {
+    border-bottom: 2px solid var(--supertennix-light-gray);
+    padding-bottom: 0.5rem;
+}
+
+.info p {
+    padding-top: 0.5rem;
+    font-size: large;
+}
+
+.logoutButton {
+    border: 2px solid var(--supertennix-white);
+    display: grid;
+    justify-items: center;
+    padding: 1rem;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: var(--supertennix-white);
+    background: none;
+    max-height: 4rem;
+}
+
+.logoutButton:focus, .logoutButton:hover{
+    border: 2px solid var(--supertennix-yellow);
+}
+
+.disclaimerContainer {
+    padding: 2rem;
+
+}
+
+.disclaimer {
+    padding: 2rem;
+    min-height: 100%;
+    background-color: var(--supertennix-mid-gray);
+    color: var(--supertennix-white);
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 10% min-content min-content 1fr;
+}
+
+.disclaimer p {
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 34px;
+    margin-block: 1rem;
+}
+
+.profileInfoContainer {
+    padding-top: 2rem;
+}
+
+.profileInfo {
+    display: grid;
+    height: 100%;
+
+}
+
+.logoutContainer {
+    border-top: 2px solid var(--supertennix-light-gray);
+    padding-top: 2rem;
+    display: grid;
+
+}
+
+.appVersion{
+    justify-self: right;
+    align-self: end;
+    padding-right: 1rem;
+}
+
+.appVersion p{
+    font-size: 1rem;
+}
+
+.focus {
+    border: 2px solid #ffdd00;
+    outline: none;
+}

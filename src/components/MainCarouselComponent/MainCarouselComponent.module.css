@@ -1,0 +1,19 @@
+.viewer {
+    z-index: 1;
+    grid-column: 2/ -1;
+    grid-row: 2/ -1;
+    height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    overflow: hidden;
+}
+
+.verticalCarousel {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 9rem;
+    max-width: 100%;
+    overflow-y: scroll;
+    padding-bottom: 4rem;
+}

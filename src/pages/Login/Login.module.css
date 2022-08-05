@@ -1,0 +1,15 @@
+.loginHome {
+    grid-row: 2 / -1;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-right: 3vw;
+}
+
+.appVersion{
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    align-self: end;
+    justify-self: right;
+    padding-bottom: 3rem;
+}

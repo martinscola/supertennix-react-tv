@@ -1,0 +1,56 @@
+.main {
+    display: grid;
+    grid-template-rows: 9vh 90vh;
+    padding: 1vh 0 0 3vw;
+}
+
+[class^='section-'] {
+    border: 2px solid transparent;
+    max-height: fit-content;
+    min-width: min-content;
+    max-width: 97%;
+    transition-property: transform;
+    transition-duration: 150ms;
+}
+
+.primaryButton, .secondaryButton, .infoButton{
+    width: 100%;
+    color: var(--supertennix-white);
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.primaryButton {
+    background: var(--supertennix-red);
+    border: 2px solid transparent;
+}
+
+.secondaryButton {
+    background: var(--supertennix-black);
+    border: 2px solid var(--supertennix-white);
+
+}
+
+.infoButton{
+    background: var(--supertennix-black);
+    border: 2px solid transparent;
+
+}
+
+.primaryButton:focus, .primaryButton:hover{
+    background-color: var(--supertennix-bright-red);
+}
+
+.secondaryButton:focus, .secondaryButton:hover{
+    border: 2px solid var(--supertennix-yellow);
+}
+
+.infoButton:focus, .infoButton:hover{
+    background-color: var(--supertennix-mid-gray);
+}
+

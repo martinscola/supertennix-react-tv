@@ -1,0 +1,49 @@
+[class^='liveCarousel'] {
+    width: 95vw;
+    border: 2px solid transparent;
+    max-height: fit-content;
+    transition-property: none;
+}
+
+.LiveCard {
+    border: 0.188rem solid var(--supertennix-yellow);
+    max-width: 90%;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 206px;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--supertennix-dark-gray);
+    padding: 3rem;
+    max-height: 370px;
+}
+
+.LiveCard:focus, .LiveCard:hover{
+    border: 0.188rem solid var(--supertennix-yellow);
+}
+
+.liveCardDescription {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: min-content;
+    row-gap: 2rem;
+}
+
+.liveBadge {
+    max-width: fit-content;
+    padding: 0.5rem 1rem;
+    background-color: var(--supertennix-red);
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.5rem;
+}
+
+.liveIcon {
+    font-size: 0.5rem;
+    align-self: center;
+}
+
+.swiperSlideImg {
+    justify-self: end;
+    max-height: var(--h-slide-component-height);
+    width: calc(var(--h-slide-component-height) * (16 / 9));
+}

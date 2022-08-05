@@ -1,0 +1,161 @@
+
+.fastLoginContainer {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    width: 80vw;
+    height: 80%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 45% 55%;
+}
+
+.loginContainer h2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.loginOption {
+
+}
+
+.leftOption {
+    border-right: 2px solid var(--supertennix-mid-gray);
+    padding-right: 3rem;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(2, 50%);
+    row-gap: 1rem;
+}
+
+.siteLoginOption {
+    display: grid;
+    row-gap: 4rem;
+    height: 100%;
+    border-bottom: 2px solid var(--supertennix-mid-gray);
+    grid-template-rows: 10%1fr;
+}
+
+.linkTVSteps {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 2rem;
+    justify-items: left;
+    align-items: start;
+    column-gap: 1rem;
+    max-height: 70%;
+}
+
+.step {
+    min-width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 90%;
+    align-items: center;
+}
+
+.stepNumber {
+    min-height: 3vw;
+    min-width: 3vw;
+    max-height: 3vw;
+    max-width: 3vw;
+    border-radius: 100%;
+    border: 3px solid var(--supertennix-yellow);
+    display: grid;
+}
+
+.stepNumber p {
+    align-self: center;
+    font-size: 26px;
+    justify-self: center;
+}
+
+.stepDescription {
+    text-align: left;
+    display: grid;
+    row-gap: 0.5rem;
+    align-items: center;
+}
+
+.stepDescription p:not(.accessCode) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.stepDescription p:first-child {
+    color: var(--supertennix-light-gray);
+}
+
+.accessCode {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.passwordOption {
+    max-height: 70%;
+    display: grid;
+    grid-auto-flow: row;
+    min-height: 70%;
+    align-self: center;
+    grid-template-rows: 30% 25%;
+    max-width: fit-content;
+}
+
+[class^="emailLogin"]:not(:focus) {
+    border: 2px solid var(--supertennix-white);
+}
+
+.passwordOption button {
+
+}
+
+.rightOption {
+
+    padding-left: 5rem;
+    display: grid;
+    grid-template-rows: 10% 40% 1fr;
+}
+
+.appMobileLogin {
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    grid-template-columns: 40% 60%;
+}
+
+.qrContainer {
+    align-self: start;
+    justify-self: left;
+    border: 2vh solid var(--supertennix-white);
+}
+
+.qrDescription {
+    max-height: 45%;
+    display: grid;
+    row-gap: 0.5rem;
+    align-items: start;
+}
+
+.qrDescription p:not(.accessCode) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.qrDescription p:first-child {
+    color: var(--supertennix-light-gray);
+}
+
+.appVersion{
+    align-self: end;
+    justify-self: right;
+}
+
+.focus {
+    border: 2px solid var(--supertennix-yellow);
+}

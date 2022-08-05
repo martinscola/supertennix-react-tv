@@ -1,0 +1,32 @@
+.showHome{
+    display: grid;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+
+.contentGrid {
+    min-height: 100%;
+    max-width: 100%;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 22%);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    overflow-y: scroll;
+}
+
+.showGridElement{
+    height: 21vh;
+    width: calc(21vh * (16 / 9));
+    overflow: hidden;
+}
+
+
+
+.focus {
+    border: 2px solid #ffdd00;
+    outline: none;
+}

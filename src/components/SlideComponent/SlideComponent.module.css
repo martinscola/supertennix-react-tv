@@ -1,0 +1,107 @@
+[class^='mainCarousel-'] {
+    border: 2px solid transparent;
+    max-height: fit-content;
+    max-width: fit-content;
+    transition-property: transform;
+    transition-duration: 150ms;
+}
+
+.HighlightCarousel,
+.EventCarousel,
+.horizontalSlide,
+.RectangularCarousel,
+.Grid{
+    height: var(--h-slide-component-height);
+    width: calc(var(--h-slide-component-height) * (16 / 9));
+    align-self: start;
+    overflow: hidden;
+}
+
+.VerticalGrid {
+    height: var(--v-slide-component-height);
+    width: calc(var(--v-slide-component-height) / (16 / 11));
+    align-self: start;
+    overflow: hidden;
+}
+
+.horizontalSlideContainer, .verticalSlideContainer{
+    border: 0.188rem solid transparent;
+    background-color: var(--supertennix-dark-gray);
+}
+
+.HighlightCarousel:focus .horizontalSlideContainer,
+.EventCarousel:focus .horizontalSlideContainer,
+.LongCardCarousel:focus .horizontalSlideContainer,
+.LiveCard:focus .horizontalSlideContainer,
+.RectangularCarousel:focus .horizontalSlideContainer,
+.contentGrid:focus .horizontalSlideContainer,
+.Grid:focus .horizontalSlideContainer,
+.VerticalGrid:focus .verticalSlideContainer,
+.HighlightCarousel:hover .horizontalSlideContainer,
+.MainSlider:hover .horizontalSlideContainer,
+.LongCardCarousel:hover .horizontalSlideContainer,
+.HorizontalCardGrid:hover .horizontalSlideContainer,
+.ContinueWatchCarousel:hover .horizontalSlideContainer,
+.LiveCard:hover .horizontalSlideContainer,
+.RectangularCarousel:hover .horizontalSlideContainer,
+.contentGrid:hover .horizontalSlideContainer,
+.Grid:hover .horizontalSlideContainer,
+.VerticalGrid:hover .verticalSlideContainer
+{
+    border: 0.188rem solid var(--supertennix-yellow);
+}
+
+.horizontalSlideContainer{
+    height: calc(24.3215rem * (9/16));
+    width: 24.3215rem;
+    border: 0.188rem solid transparent;
+    display: grid;
+    grid-auto-flow: row;
+    overflow: hidden;
+    grid-template-rows:  repeat(3, calc(100%/3));
+}
+
+.verticalSlideContainer {
+    height: var(--v-slide-component-height);
+    max-height: 100%;
+    width: auto;
+    display: grid;
+    grid-auto-flow: row;
+    overflow: hidden;
+    grid-template-rows:  30% 30% 40%;
+}
+
+.slideInfo{
+    z-index: 999;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: end;
+}
+
+.HighlightCarousel img,
+.EventCarousel img,
+.horizontalSlide img,
+.Grid img,
+.VerticalGrid img{
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.categorySlide{
+    grid-column: 1/ -1;
+    grid-row: 2/2;
+    align-self: center;
+    justify-self: center;
+    text-transform: uppercase;
+}
+
+.activeCategory .horizontalSlideContainer, .activeCategory .verticalSlideContainer{
+    background-color: var(--supertennix-mid-gray);
+    color: var(--supertennix-yellow);
+    font-size: large;
+}

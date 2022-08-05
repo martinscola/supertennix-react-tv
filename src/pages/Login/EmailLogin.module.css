@@ -1,0 +1,88 @@
+.emailLoginContainer{
+
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.leftContainer{
+    padding-top: 2rem;
+    align-self: start;
+    height: 75%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 3rem;
+    grid-template-rows: 20% 1fr 40%;
+}
+
+.titleDescription{
+    align-items: center;
+    padding-top: 2rem;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.titleDescription p{
+    color: var(--supertennix-light-gray);
+}
+
+.usernameInput, .passwordInput {
+    background: var(--supertennix-dark-gray);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    color: var(--supertennix-white);
+    font-size: 26px;
+    padding: 1.5rem;
+    height: fit-content;
+    width: 100%;
+}
+
+.loginForm {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 2rem;
+
+}
+
+.errorBox {
+    height: 1rem;
+    width: 100%;
+}
+
+.buttonContainer {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.buttonSection {
+    border: 2px solid transparent;
+    width: 100%;
+    height: fit-content;
+}
+
+.buttonSection.focus [class*="secondaryButton"] {
+    border: 2px solid transparent;
+}
+
+
+.rightContainer {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url("../../resources/img/appTV/placeholder-bg-appTV.png") no-repeat top 50% right 25%;
+}
+
+.inputFocus {
+    border: 2px solid var(--supertennix-light-gray);
+}
+
+.focus {
+    border: 2px solid var(--supertennix-yellow);
+    border-radius: 5px;
+}

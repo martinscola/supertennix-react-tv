@@ -1,0 +1,17 @@
+@-webkit-keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    align-self: center;
+    justify-self: center;
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
