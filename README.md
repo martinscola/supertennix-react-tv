@@ -1,33 +1,44 @@
 # Supertennix TV App
 
-## NOTICE: This project is for demostration purposes only and should never be used in a Production setting.
+## NOTICE: This project is for demonstration purposes only and should never be used in a Production setting.
+
+> **Migration Note (May 2026)**: This app has been migrated from Create React App to **Vite + React 18**. Old CRA scripts have been replaced.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start:dev`
+### `npm run dev`
 
-Runs the app in the development mode. Loads `.env.dev` file \
+Runs the app in development mode with Vite (fast HMR).
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm start-80`
+### `npm run start:dev`
 
-#### Requires admin password for computer and adding a sub-domain in `/etc/hosts` *(eg: local.supertennix.it)*
+Same as above (alias for Vite dev server).
 
-Runs app in dev mode in port 80 This works when trying to make calls that could be subject to CORS blocking.\
-Loads `.env.dev` file. \
-Open the URL without HTTPS *(ONLY HTTP)* (
-eg: **[http://local.supertennix.it](http://local.supertennix.it)**)
+### `npm run start-80:dev`
 
-### `npm test`
+Runs on port 80 (useful for CORS testing on some TVs).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more
-information.
+### `npm run build`
+
+Builds the app for production to the `build` folder.
 
 ### `npm run build:prod`
 
-Builds the app for production to the `build` folder. Loads `.env.prod` file. \
-It correctly bundles React in production mode and optimizes the build for the best performance. \
-The build is minified and the filenames include the hashes.\
+Production build (same as above).
+
+### `npm run preview`
+
+Locally preview the production build.
+
+### `npm test`
+
+Launches Vitest (if configured) or the test runner.
+
+## Environment Variables
+
+- Use `.env.development` and `.env.production` (Vite convention)
+- Access variables with `import.meta.env.VITE_YOUR_VAR`
+- For now, a compatibility shim for `process.env` is included.
