@@ -1,57 +1,42 @@
 {
   "name": "supertennix",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
-  "homepage": "./",
+  "type": "module",
   "dependencies": {
     "@jitesoft/random-string": "^1.2.4",
     "@noriginmedia/react-spatial-navigation": "^2.12.9",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.25.0",
-    "env-cmd": "^10.1.0",
-    "jwt-decode": "^3.1.2",
-    "moment": "^2.29.3",
-    "moment-timezone": "^0.5.34",
-    "qrcode.react": "^1.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-image": "^4.0.3",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "axios": "^1.6.7",
+    "jwt-decode": "^4.0.0",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-image": "^4.1.0",
+    "react-router-dom": "^6.22.3",
     "react-with-forwarded-ref": "^0.3.4",
     "spatial-navigation-js": "^1.0.0",
-    "video.js": "^7.17.0",
-    "web-vitals": "^2.1.4"
+    "video.js": "^8.10.0",
+    "web-vitals": "^3.5.2"
   },
   "scripts": {
-    "start:dev": "env-cmd -f .env.dev react-scripts start",
-    "start-80:dev": "sudo PORT=80 env-cmd -f .env.dev react-scripts start",
-    "start-80:prod": "sudo PORT=80 env-cmd -f .env.prod react-scripts start",
-    "build:prod": "env-cmd -f .env.prod react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "vite",
+    "start:dev": "vite --mode development",
+    "start-80:dev": "vite --mode development --port 80",
+    "build": "vite build",
+    "build:prod": "vite build --mode production",
+    "preview": "vite preview",
+    "test": "vitest",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "@vitejs/plugin-react": "^4.2.1",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.0",
+    "vite-plugin-svgr": "^4.2.0"
   }
 }
