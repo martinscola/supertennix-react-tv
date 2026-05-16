@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
 // PAGES
@@ -22,7 +22,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root'));
+root.render(
     <HashRouter>
         <React.StrictMode>
             <Routes>
@@ -65,8 +66,7 @@ ReactDOM.render(
             </Routes>
             
         </React.StrictMode>
-    </HashRouter>,
-    document.getElementById("root")
+    </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
